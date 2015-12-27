@@ -7,6 +7,6 @@ RUN apk add --update nginx
 ADD nginx.crt /etc/ssl/nginx/
 ADD nginx.key /etc/ssl/nginx/
 
-EXPOSE 80 443
+EXPOSE 443
 
 CMD ["nginx", "-g", "daemon off;"]
